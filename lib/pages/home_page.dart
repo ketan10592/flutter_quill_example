@@ -263,7 +263,7 @@ class _HomePageState extends State<HomePage> {
                                 return GestureDetector(
                                   onTap: () {
                                     _onTapOverLaySuggestionItem(data.userName!,
-                                        userId: data.id);
+                                        userId: data.userName);
                                   },
                                   child: ListTile(
                                     leading: CachedNetworkImage(
@@ -446,7 +446,7 @@ class _HomePageState extends State<HomePage> {
               );
             },
             child: Text(
-              'View Json',
+              'Preview',
               style: TextStyle(fontSize: 18, color: Colors.white),
             ),
           )
